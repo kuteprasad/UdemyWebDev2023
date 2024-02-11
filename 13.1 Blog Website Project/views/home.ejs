@@ -1,0 +1,19 @@
+<%- include('profiles/header') %>
+
+<div class="middle-section-group">
+  <div class="left-section"></div>
+  <div class="main-section">
+    <h1>My Blogs</h1>
+    <ul>
+      <% objArray.forEach(function(obj) { %> <% if(obj.title_number != -1){ %>
+      <li>
+        Title Number: <%= obj.title_number %><br />
+        Title: <%= obj.title %><br />
+        Description: <%= obj.description %><br />
+      </li>
+      <% }}); %>
+    </ul>
+  </div>
+</div>
+<!-- write the body here  -->
+<%- include("profiles/footer.ejs") %>

@@ -1,0 +1,12 @@
+<%- include("profiles/header.ejs") %>
+
+<!-- write the body here  -->
+<form action="/home" method="post">
+  <h2>Enter the number of blog which you want to delete:</h2>
+  <label for="to_del">Enter Number:</label>
+  <input type="number" name="to_del" id="to_del" />
+
+  <input type="submit" value="Delete" />
+</form>
+
+<%- include("profiles/footer.ejs") %>

@@ -1,0 +1,18 @@
+<%- include("profiles/header.ejs") %>
+
+<!-- write the body here  -->
+<form action="/home" method="post">
+  <label for="title-number">Enter title Number:</label>
+  <input type="number" name="title-number" id="title-number" />
+  <br /><br />
+  <label for="title">Enter Title of your Blog</label>
+  <input type="text" name="title" id="title" />
+  <br />
+  <br /><br />
+  <label for="description">Give some description</label>
+  <input type="text" name="description" id="description" />
+  <br /><br />
+  <input type="submit" value="Add Blog" id="submit-button" />
+</form>
+
+<%- include("profiles/footer.ejs") %>
